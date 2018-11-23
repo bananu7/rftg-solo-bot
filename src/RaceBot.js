@@ -30,6 +30,17 @@ class RaceBot extends Component {
                     <div className="element"/>
                     <div className="element"/>
                 </div>
+                <div className="horizontal-line"/>
+                <div className="playerchoice">
+                    <div className="element"/>
+                    <div className="element"/>
+                    <div className="element"/>
+                    <div className="element"/>
+                    <div className="element"/>
+                    <div className="element"/>
+                    <div className="element"/>
+                    <div className="element"/>
+                </div>
             </div>
         );
     }
