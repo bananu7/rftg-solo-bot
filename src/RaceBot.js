@@ -2,6 +2,54 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './RaceBot.css';
 
+class Track extends Component {
+    constructor(props) {
+        super(props);
+        if (new.target === Track) {
+            throw new TypeError("Cannot construct Abstract instances directly");
+        }
+
+        this.state = {
+            value: this.props.value
+        };
+    }
+
+    render() {
+        let elements = [];
+
+        for (let i = 0; i < 5; ++i) {
+            let className = 'element';
+            if (i === this.state.value)
+                className += ' active';
+
+            elements.push(<div className={className}/>);
+        }
+
+        return (
+            <div
+                className={this.wrapperClassName}
+                onClick={() => this.setState({value: (this.state.value + 1) % 5 })}
+            >
+                {elements}
+            </div>
+        );
+    }
+}
+
+class MoneyTrack extends Track {
+    constructor (props) { 
+        super(props);
+        this.wrapperClassName = "moneytrack";
+    }
+}
+
+class EconomyTrack extends Track {
+    constructor (props) { 
+        super(props);
+        this.wrapperClassName = "economytrack";
+    }
+}
+
 class RaceBot extends Component {
     constructor(props) {
         super(props);
@@ -17,20 +65,8 @@ class RaceBot extends Component {
             <div className="racebot">
                 You play against an "adaptable robot" opponent.
                 <div className="tracks">
-                    <div className="moneytrack">
-                        <div className="element"/>
-                        <div className="element"/>
-                        <div className="element"/>
-                        <div className="element"/>
-                        <div className="element"/>
-                    </div>
-                    <div className="economytrack">
-                        <div className="element"/>
-                        <div className="element"/>
-                        <div className="element"/>
-                        <div className="element"/>
-                        <div className="element"/>
-                    </div>
+                    <MoneyTrack value={1}/>
+                    <EconomyTrack value={0}/>
                 </div>
                 <div className="horizontal-line"/>
                 <div className="playerchoice">

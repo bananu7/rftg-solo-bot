@@ -41,6 +41,10 @@ div.racebot {
     height: 50px;
 }
 
+.economytrack .element.active, .moneytrack .element.active {
+    border-width: 3px;
+}
+
 .economytrack .element {
     background-color: #ccc;
 }
@@ -56,6 +60,8 @@ div.racebot {
     border-top: 2px solid black;
     width: 100%;
     height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Player choice row */
@@ -109,6 +115,8 @@ div.racebot {
     border-top: 2px dashed black;
     width: 100%;
     height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Robot choices */
