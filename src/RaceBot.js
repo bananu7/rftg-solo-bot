@@ -16,19 +16,21 @@ class RaceBot extends Component {
         return (
             <div className="racebot">
                 You play against an "adaptable robot" opponent.
-                <div className="moneytrack">
-                    <div className="element"/>
-                    <div className="element"/>
-                    <div className="element"/>
-                    <div className="element"/>
-                    <div className="element"/>
-                </div>
-                <div className="economytrack">
-                    <div className="element"/>
-                    <div className="element"/>
-                    <div className="element"/>
-                    <div className="element"/>
-                    <div className="element"/>
+                <div className="tracks">
+                    <div className="moneytrack">
+                        <div className="element"/>
+                        <div className="element"/>
+                        <div className="element"/>
+                        <div className="element"/>
+                        <div className="element"/>
+                    </div>
+                    <div className="economytrack">
+                        <div className="element"/>
+                        <div className="element"/>
+                        <div className="element"/>
+                        <div className="element"/>
+                        <div className="element"/>
+                    </div>
                 </div>
                 <div className="horizontal-line"/>
                 <div className="playerchoice">
