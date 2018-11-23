@@ -57,39 +57,67 @@ div.racebot {
     display: flex;
     flex-wrap: wrap;
     margin-left: 100px;
+    height: 80px;
 }
 
 .playerchoice .element {
     border-radius: 5px;
+    border: 1px solid white;
     width: 50px;
     height: 50px;
     margin-right: 10px;
 }
 
-.playerchoice .element:nth-child(1) {
+.playerchoice .element:nth-child(1), .playerchoice .element:nth-child(2) {
     background-color: #e2c973;
 }
 
-.playerchoice .element:nth-child(2) {
+.playerchoice .element:nth-child(3) {
     background-color: #4596ad;
 }
 
-.playerchoice .element:nth-child(3) {
+.playerchoice .element:nth-child(4) {
     background-color: #78b7c9;
 }
 
-.playerchoice .element:nth-child(4) {
+.playerchoice .element:nth-child(5) {
     background-color: #c277c9;
 }
 
-.playerchoice .element:nth-child(5) {
+.playerchoice .element:nth-child(6) {
     background-color: #da9ae0;
 }
 
-.playerchoice .element:nth-child(6), .playerchoice .element:nth-child(7) {
+.playerchoice .element:nth-child(7), .playerchoice .element:nth-child(8) {
     background-color: #7cb7ac;
 }
 
-.playerchoice .element:nth-child(8) {
+.playerchoice .element:nth-child(9) {
     background-color: #a97cb7;
+}
+
+/* Horizontal arrow */
+
+.horizontal-arrow {
+    border-top: 2px dashed black;
+    width: 100%;
+    height: 1px;
+}
+
+/* Robot choices */
+
+.robotchoice {
+    width: 100%;
+    display: flex;
+    margin-left: 100px;
+    height: 80px;
+}
+
+.robotchoice .element {
+    border-radius: 6px;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    margin-right: 10px;
 }
